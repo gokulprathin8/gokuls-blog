@@ -1,0 +1,47 @@
+base_url = "https://example.com"
+
+taxonomies = [ { name = "tags" } ]
+
+compile_sass = true
+
+build_search_index = false
+#generate_feed = true
+
+title = "gokul rants about tech."
+description = "all things about tech, architecture design, infra and ai"
+
+[markdown]
+highlight_code = true
+theme = "simple-dev-blog"
+
+[extra]
+
+dark_mode = false
+
+nav = [
+  { name = "About", path = "/about/" },
+  { name = "Blog", path = "/blog/" }
+]
+
+latest_text = "Check out my latest post:"
+
+icon = "icon.png"
+profile_small = "icon.png"
+profile_large = "profile.jpg"
+
+accent = "#05a081"
+accent_light = "#82d0c0"
+
+author = "John Doe"
+
+footer_about = """
+A simple dev-blog theme created by Bennett. You can follow him on [Github](https://github.com/bennetthardwick) (if you like).
+"""
+
+footer_page = """
+© 2021, all rights reserved
+"""
+
+not_found_message = """
+This is not the page you're looking for... return back to [safety?](/)
+"""
