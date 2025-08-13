@@ -31,10 +31,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Install Zola
-        run: |
-          curl -sSL https://get.zola.rs | bash -s
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Setup Zola
+        uses: shalzz/zola-deploy-action@v0.17.1
       
       - name: Build site
         run: zola build --base-url https://gokulprathin8.github.io/gokuls-blog/
