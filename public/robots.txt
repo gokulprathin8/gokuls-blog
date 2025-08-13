@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://gokulprathin8.github.io/gokuls-blog/sitemap.xml

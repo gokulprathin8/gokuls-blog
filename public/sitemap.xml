@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://gokulprathin8.github.io/gokuls-blog/</loc>
+    </url>
+    <url>
+        <loc>https://gokulprathin8.github.io/gokuls-blog/about/</loc>
+    </url>
+    <url>
+        <loc>https://gokulprathin8.github.io/gokuls-blog/blog/</loc>
+    </url>
+    <url>
+        <loc>https://gokulprathin8.github.io/gokuls-blog/blog/first-post/</loc>
+        <lastmod>2020-05-15T00:00:00Z</lastmod>
+    </url>
+    <url>
+        <loc>https://gokulprathin8.github.io/gokuls-blog/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://gokulprathin8.github.io/gokuls-blog/tags/</loc>
+    </url>
+    <url>
+        <loc>https://gokulprathin8.github.io/gokuls-blog/tags/beginner/</loc>
+    </url>
+</urlset>
