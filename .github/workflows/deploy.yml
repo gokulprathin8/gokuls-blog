@@ -31,10 +31,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Setup Zola
-        uses: shalzz/zola-deploy-action@v0.17.1
+      - name: Install Zola
+        uses: baptiste0928/cargo-install@v2
         with:
-          args: --base-url https://gokulprathin8.github.io/gokuls-blog/
+          crate: zola
+      
+      - name: Build site
+        run: zola build --base-url https://gokulprathin8.github.io/gokuls-blog/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
