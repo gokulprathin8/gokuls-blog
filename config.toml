@@ -35,11 +35,11 @@ accent_light = "#82d0c0"
 author = "John Doe"
 
 footer_about = """
-A simple dev-blog theme created by Bennett. You can follow him on [Github](https://github.com/bennetthardwick) (if you like).
+All things tech.
 """
 
 footer_page = """
-© 2021, all rights reserved
+© 2025, all rights reserved
 """
 
 not_found_message = """
