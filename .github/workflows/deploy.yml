@@ -30,11 +30,11 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      
+
       - name: Install Zola
-        run: |
-          curl -sSL https://get.zola.rs | bash -s
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola
       
       - name: Build site
         run: zola build --base-url https://gokulprathin8.github.io/gokuls-blog/
