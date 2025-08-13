@@ -124,12 +124,14 @@
   <body>
     {% block header %}
       <header>
-        <a class="profile-icon" href="/static">
+        <a class="profile-icon" href="https://gokuls-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
           <img src="{{ icon.url }}" alt="profile picture">
         </a>
         <nav>
           {% for link in config.extra.nav %}
-            <a href="{{ link.path }}">{{ link.name }}</a>
+            {% if not section or section.path != "/blog/" or link.name != "Blog" %}
+              <a href="{{ link.path }}">{{ link.name }}</a>
+            {% endif %}
           {% endfor %}
         </nav>
       </header>

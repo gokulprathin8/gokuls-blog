@@ -1,4 +1,4 @@
-base_url = "https://example.com"
+base_url = "https://gokulprathin.github.io"
 
 taxonomies = [ { name = "tags" } ]
 
@@ -16,10 +16,10 @@ theme = "simple-dev-blog"
 
 [extra]
 
-dark_mode = false
+dark_mode = true
 
 nav = [
-  { name = "About", path = "/about/" },
+  { name = "About", path = "https://gokuls-portfolio.vercel.app/" },
   { name = "Blog", path = "/blog/" }
 ]
 
@@ -29,8 +29,8 @@ icon = "icon.png"
 profile_small = "icon.png"
 profile_large = "profile.jpg"
 
-accent = "#05a081"
-accent_light = "#82d0c0"
+accent = "#6BCB77"
+accent_light = "#D4F2DD"
 
 author = "John Doe"
 
