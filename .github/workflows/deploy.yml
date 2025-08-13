@@ -26,9 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
-          # The last commit that touched the paths in .gitmodules. This is important for Zola sites with themes
-          # that are included as git submodules.
           fetch-depth: 0
       
       - name: Setup Pages
@@ -37,7 +34,7 @@ jobs:
       - name: Setup Zola
         uses: shalzz/zola-deploy-action@v0.17.1
         with:
-          args: --base-url ${{ steps.deploy.outputs.page_url }}/
+          args: --base-url https://gokulprathin8.github.io/gokuls-blog/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
