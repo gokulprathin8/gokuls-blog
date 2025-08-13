@@ -1,13 +1,13 @@
 +++
-title = "Bennett's Rust Journal"
+title = "Gokul's Blog"
 +++
 
-## Hello, this is a simple dev blog.
+## Welcome to my blog!
 
-This is a simple dev blog that I made [for my website](https://bennett.dev).
-It's quite easy to install, just go to the [project page](https://github.com/bennetthardwick/simple-dev-blog-zola-starter) and follow the prompts.
+Here are my latest posts:
 
-This template does some fancy stuff like [pre-rendering](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) blog posts and nav links,
-pre-fetching your profile image and adding a bunch of common meta tags.
+<script>
+  window.location.href = '/blog/';
+</script>
 
-If you're still making up your mind, feel fee to take a look around by clicking the [about](/about/) and [blog](/blog/) nav links.
+<p>If you are not redirected automatically, <a href="/blog/">click here</a> to go to the blog.</p>

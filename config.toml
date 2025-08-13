@@ -19,8 +19,7 @@ theme = "simple-dev-blog"
 dark_mode = true
 
 nav = [
-  { name = "About", path = "https://gokuls-portfolio.vercel.app/" },
-  { name = "Blog", path = "/blog/" }
+  { name = "About", path = "https://gokuls-portfolio.vercel.app/" }
 ]
 
 latest_text = "Check out my latest post:"

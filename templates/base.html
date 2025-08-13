@@ -129,9 +129,7 @@
         </a>
         <nav>
           {% for link in config.extra.nav %}
-            {% if not section or section.path != "/blog/" or link.name != "Blog" %}
-              <a href="{{ link.path }}">{{ link.name }}</a>
-            {% endif %}
+            <a href="{{ link.path }}">{{ link.name }}</a>
           {% endfor %}
         </nav>
       </header>

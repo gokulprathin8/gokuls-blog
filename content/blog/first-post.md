@@ -1,5 +1,7 @@
 +++
 title = "My first Zola blog post - ci/ cd test"
+date = 2020-05-15T00:00:00Z
+description = "Welcome to my new blog! I used Zola to build it."
 [taxonomies]
 tags = [ "beginner" ]
 +++

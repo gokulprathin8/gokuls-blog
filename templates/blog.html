@@ -3,15 +3,34 @@
 {% import "post-preview.html" as post_macros %}
 
 {% block posthead %} 
-  {% for post in section.pages %}
-    <link rel="prerender" href="{{ post.permalink }}" />
-  {% endfor %}
+  {% if paginator %}
+    {% for post in paginator.pages %}
+      <link rel="prerender" href="{{ post.permalink }}" />
+    {% endfor %}
+  {% else %}
+    {% for post in section.pages %}
+      <link rel="prerender" href="{{ post.permalink }}" />
+    {% endfor %}
+  {% endif %}
 {% endblock posthead %}
 
 {% block content %}
   {{ section.content | safe }}
 
-  {% for post in section.pages %}
-    {{ post_macros::post_preview(post=post) }}
-  {% endfor %}
+  {% if paginator %}
+    {% for post in paginator.pages %}
+      {{ post_macros::post_preview(post=post) }}
+    {% endfor %}
+    
+    {% if paginator.previous %}
+      <a href="{{ paginator.previous }}">← Previous</a>
+    {% endif %}
+    {% if paginator.next %}
+      <a href="{{ paginator.next }}">Next →</a>
+    {% endif %}
+  {% else %}
+    {% for post in section.pages %}
+      {{ post_macros::post_preview(post=post) }}
+    {% endfor %}
+  {% endif %}
 {% endblock content %}
