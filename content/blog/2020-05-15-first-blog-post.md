@@ -1,5 +1,5 @@
 +++
-title = "My first Zola blog post"
+title = "My first Zola blog post - ci/ cd test"
 [taxonomies]
 tags = [ "beginner" ]
 +++
