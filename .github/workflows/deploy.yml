@@ -32,9 +32,9 @@ jobs:
         uses: actions/configure-pages@v4
       
       - name: Install Zola
-        uses: baptiste0928/cargo-install@v2
-        with:
-          crate: zola
+        run: |
+          curl -sSL https://get.zola.rs | bash -s
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
       
       - name: Build site
         run: zola build --base-url https://gokulprathin8.github.io/gokuls-blog/
