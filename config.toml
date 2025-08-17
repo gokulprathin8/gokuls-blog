@@ -26,7 +26,7 @@ latest_text = "Check out my latest post:"
 
 icon = "icon.png"
 profile_small = "icon.png"
-profile_large = "icon.jpg"
+profile_large = "icon.png"
 
 accent = "#6BCB77"
 accent_light = "#D4F2DD"
